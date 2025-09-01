@@ -1,0 +1,14 @@
+{
+    "name" : "Ai Dev Container",
+    "dockerComposeFile" : "docker-compose.yml",
+    "service" : "nestJs",
+    "workspaceFolder" : "/workspace",
+    "extensions" : [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "postCreateCommand": "npm install -g @nestjs/cli"
+}
